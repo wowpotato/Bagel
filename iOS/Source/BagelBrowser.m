@@ -109,7 +109,6 @@
 
 - (void)sendPacket:(BagelRequestPacket*)packet
 {
-    NSError *error;
     NSData* packetData = [NSJSONSerialization dataWithJSONObject:[packet toJSON] options:0 error:nil];
     
     if (packetData) {
